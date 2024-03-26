@@ -13,7 +13,11 @@
 <body>
     <main>
         <section id="photo">
-            <img src="profilePhoto.jpg">
+            <picture>
+                <source srcset="profilePicTinified.webp" media="(min-width: 2000px)">
+                <source srcset="profilePicTinified1500px.webp" media="(min-width: 800px)">
+                <img src="profilePicTinified800px.webp" alt="Profile photo of Walter">
+            </picture>            
         </section>
         <section id="about">
             <p>Hi, I'm Walter!</p>
