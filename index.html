@@ -13,11 +13,11 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-06G1HCM3X1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-06G1HCM3X1');
+    gtag('config', 'G-06G1HCM3X1');
 </script>
 
 
@@ -29,23 +29,27 @@
                 <source srcset="profilePicTinified1500px.webp" media="(min-width: 1100px)">
                 <source srcset="profilePicTinified1100px.webp" media="(min-width: 800px)">
                 <img src="profilePicTinified800px.webp" alt="Profile photo of Walter">
-            </picture>            
+            </picture>
         </section>
         <section id="about">
             <p>Hi, I'm Walter!</p>
             <p>Right now, I'm on sabbatical working on personal projects. My current focus is on creating tools to help
                 people get good sleep.</p>
-            <p>In 2024, I launched and built <a href="https://visa-checker-app.vercel.app/" target="_blank">VisaHacks</a>, a tool that
+            <p>In 2024, I launched and built <a href="https://visa-checker-app.vercel.app/"
+                    target="_blank">VisaHacks</a>, a tool that
                 simplifies checking visa requirements for Indian passport holders.</p>
-            <p>From 2020 to 2023, I worked as a Product Manager at <a href="https://www.igloohome.co/" target="_blank">igloohome</a>,
-                where I led the launch of software for the <a href="https://www.igloohome.co/products/bridge" target="_blank">Bridge</a>
-                (Bluetooth/WiFi gateway), the <a href="https://www.igloohome.co/products/padlock-2" target="_blank">Padlock 2</a>
-                (world's toughest smart padlock), the <a
-                    href="https://igloocompany.stoplight.io/docs/igloohome-api" target="_blank">igloohome API</a> (enterprise API
+            <p>From 2020 to 2023, I worked as a Product Manager at <a href="https://www.igloohome.co/"
+                    target="_blank">igloohome</a>,
+                where I led the launch of software for the <a href="https://www.igloohome.co/products/bridge"
+                    target="_blank">Bridge</a>
+                (Bluetooth/WiFi gateway), the <a href="https://www.igloohome.co/products/padlock-2"
+                    target="_blank">Padlock 2</a>
+                (world's toughest smart padlock), the <a href="https://igloocompany.stoplight.io/docs/igloohome-api"
+                    target="_blank">igloohome API</a> (enterprise API
                 product), and various other smart devices.</p>
-            <p>My formal educational background is in mechanical engineering at <a
-                    href="https://www.nus.edu.sg/" target="_blank">NUS</a> and liberal arts at <a
-                    href="https://www.usp.nus.edu.sg/" target="_blank">USP</a>.</p>
+            <p>My formal educational background is in mechanical engineering at <a href="https://www.nus.edu.sg/"
+                    target="_blank">NUS</a> and liberal arts at <a href="https://www.usp.nus.edu.sg/"
+                    target="_blank">USP</a>.</p>
         </section>
         <section class="hide" id="readings">
             <h3>selected readings</h3>
@@ -102,10 +106,23 @@
                     promoting effective altruism)</li>
                 <li><a href="https://www.givewell.org/" target="_blank">GiveWell</a> (Research helps direct donations to
                     the most impactful charities)</li>
-                <li><a href="https://cryptopals.com/" target="_blank">Cryptopals Crypto Challenges</a> (48 exercises that demonstrate attacks on real-world crypto)</li>
-                <li><a href="https://builtformars.co.uk/" target="_blank">builtformars</a> (Insightful case studies from a UX consultancy)</li>
+                <li><a href="https://cryptopals.com/" target="_blank">Cryptopals Crypto Challenges</a> (48 exercises
+                    that demonstrate attacks on real-world crypto)</li>
+                <li><a href="https://builtformars.co.uk/" target="_blank">builtformars</a> (Insightful case studies from
+                    a UX consultancy)</li>
                 <li><a href="http://furius.ca/beancount/" target="_blank">beancount</a> (Double-entry
                     accounting from text files)</li>
+            </ul>
+        </section>
+        <section id="projects" class="hide">
+            <h3>projects</h3>
+            <ul>
+                <li><a href="https://visa-checker-app.vercel.app/">VisaHacks</a> - a tool that simplifies checking
+                    visa requirements for Indian passport holders.</li>
+                <li><a href="./dragon/dragon.html">Dragon Repeller</a> - A simple HTML game I made while doing
+                    FreeCodeCamp.</li>
+                <li><a href="./chamberlain/chamberlain.html">Chamberlain Coffee</a> - I tried building Emma
+                    Chamberlain's website (without inspecting element) while learning HTML and CSS.</li>
             </ul>
         </section>
         <section>
@@ -113,6 +130,7 @@
             <p>Email: walter.spades[at]gmail.com</p>
             <button id="about-button">about</button>
             <button id="readings-button">selected readings</button>
+            <button id="projects-button">projects</button>
         </section>
     </main>
     <script src="./script.js"></script>

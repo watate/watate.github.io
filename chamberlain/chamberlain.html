@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!-- Hey there! For this project, I wanted to see if I could replicate the website for a brand I really like (Chamberlain Coffee) without inspecting element or copying their HTML. 
+  Thanks for taking a look at my attempt! -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./chamberlain.css">
+    <title>Product Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <img id="header-img"
+                src="https://cdn.sanity.io/images/otip2849/production/9fb0d2417a25e76018827202cfd727af5d575064-120x47.svg?w=1280&q=80&auto=format"
+                alt="Chamberlain coffee logo">
+            <ul class="lists header-list">
+                <li><a class="nav-link" href="#shop-all">shop all</a></li>
+                <li><a class="nav-link" href="#coffee-beans">coffee beans</a></li>
+                <li><a class="nav-link" href="#cold-brew-and-instant">cold brew & instant</a></li>
+                <li><a class="nav-link" href="#matcha-and-tea">matcha & tea</a></li>
+                <li><a class="nav-link" href="#accessories-and-more">accessories & more</a></li>
+                <li><a class="nav-link" href="#learn">learn</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <button class="header-button">find us in stores</button>
+            <button class="header-button">subscribe</button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#fff" class="w-6 h-6">
+                <title>Search</title>
+                <path fill-rule="evenodd"
+                    d="M13.3 8.52a4.77 4.77 0 1 1-9.55 0 4.77 4.77 0 0 1 9.55 0Zm-.98 4.68a6.02 6.02 0 1 1 .88-.88l4.3 4.3-.89.88-4.3-4.3Z">
+                </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#fff" class="w-7 h-7">
+                <title>Account</title>
+                <path fill-rule="evenodd"
+                    d="M9.9998 12.625c-1.9141 0-3.6628.698-5.0435 1.8611C3.895 13.2935 3.25 11.7221 3.25 10c0-3.728 3.022-6.75 6.75-6.75 3.7279 0 6.75 3.022 6.75 6.75 0 1.7222-.645 3.2937-1.7065 4.4863-1.3807-1.1632-3.1295-1.8613-5.0437-1.8613ZM10 18c-2.3556 0-4.4734-1.0181-5.9374-2.6382C2.7806 13.9431 2 12.0627 2 10c0-4.4183 3.5817-8 8-8s8 3.5817 8 8-3.5817 8-8 8Zm0-12.5c-1.567 0-2.75 1.394-2.75 3s1.183 3 2.75 3 2.75-1.394 2.75-3-1.183-3-2.75-3Z">
+                </path>
+            </svg>
+            <svg viewBox="0 0 23 28" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7">
+                <path
+                    d="M22.7494 12.8799V17.5154C22.7494 17.595 22.7456 17.6708 22.7418 17.7497C22.6197 20.2705 20.4657 22.305 17.7583 22.5218V23.649C17.7583 26.0482 15.7877 28.0006 13.3662 28.0006H4.39215C1.97062 28.0006 0 26.0482 0 23.649V8.13547C0 7.7188 0.0607122 7.31465 0.171385 6.93244C0.415499 6.08844 0.911948 5.35095 1.57283 4.80207C1.17187 4.72688 0.881592 4.46183 0.858192 4.12097C0.850603 4.10594 0.850603 4.08714 0.850603 4.06834V3.73563H15.9433V2.97872L16.6535 2.41479C16.8103 2.547 16.9052 2.72871 16.9052 2.9336V4.06897C16.9052 4.43614 16.6073 4.72374 16.1836 4.80269C16.8559 5.36286 17.3599 6.11601 17.5964 6.97881C17.6805 7.26641 17.7299 7.56529 17.7495 7.87168C20.5454 8.09412 22.7487 10.2552 22.7487 12.8806L22.7494 12.8799ZM21.6034 17.5154V12.8799C21.6034 10.8786 19.9193 9.22447 17.7577 9.00955V9.61922C19.4949 9.83539 20.8395 11.2157 20.8395 12.8806V17.516C20.8395 19.1808 19.4949 20.5618 17.7577 20.7774V21.3864C19.5828 21.2047 21.0646 19.9979 21.4845 18.4239C21.5611 18.1326 21.6034 17.8262 21.6034 17.5154ZM19.6935 17.5154V12.8799C19.6935 11.8398 18.8613 10.9657 17.7577 10.7684V19.6263C18.8613 19.4296 19.6935 18.5555 19.6935 17.5148V17.5154ZM16.6117 10.8786C16.6383 10.8517 16.6617 10.8216 16.6845 10.7915C16.6579 10.7953 16.6345 10.7991 16.6117 10.8103V8.1361C16.6117 8.05277 16.6079 7.96943 16.6042 7.88985C16.5966 7.77958 16.5814 7.66993 16.5624 7.56403C16.5548 7.51892 16.5434 7.47694 16.5352 7.43182C16.5276 7.38233 16.5125 7.33345 16.4966 7.28458C16.4511 7.11478 16.3898 6.94748 16.317 6.78895C15.8054 5.67677 14.6746 4.90483 13.3649 4.90483H4.39152C3.07419 4.90483 1.93963 5.68053 1.43559 6.80023C1.41662 6.84535 1.39701 6.88733 1.37804 6.93244C1.37425 6.93996 1.37045 6.94748 1.36666 6.95876C1.34768 7.0045 1.33251 7.04961 1.32112 7.09848C1.29836 7.15112 1.28255 7.20438 1.268 7.25764C1.22563 7.39736 1.19527 7.54148 1.1763 7.68872C1.16492 7.76078 1.15733 7.83597 1.15353 7.90803C1.14974 7.98008 1.14594 8.04775 1.14594 8.11981V23.6333C1.14594 25.404 2.60051 26.8496 4.39215 26.8496H13.3662C15.1572 26.8496 16.6124 25.404 16.6124 23.6333V10.8786H16.6117Z"
+                    fill="#fff"></path>
+                <path
+                    d="M16.9061 0.756909V1.89227C16.9061 2.09654 16.8106 2.27825 16.6544 2.41421L15.9442 2.97814H1.80272V3.73442H0.851563V2.9324C0.851563 2.7275 0.947058 2.54642 1.10327 2.41359C0.946425 2.27762 0.851563 2.09591 0.851563 1.89165V0.756909C0.851562 0.325822 1.26453 0 1.81031 0H15.948C16.4938 0 16.9061 0.325822 16.9061 0.756909ZM15.9442 1.63099V0.87408H1.80272V1.63099H15.9442Z"
+                    fill="#fff"></path>
+                <path
+                    d="M16.685 10.7915C16.6623 10.8216 16.6395 10.8517 16.6123 10.8786V10.8103C16.6351 10.7984 16.6578 10.7946 16.685 10.7915Z"
+                    fill="#fff"></path>
+                <path
+                    d="M16.5356 7.43118C16.5243 7.38168 16.5129 7.33281 16.4971 7.28394C16.5122 7.33344 16.5281 7.38231 16.5356 7.43118Z"
+                    fill="#fff"></path>
+                <path
+                    d="M13.3661 4.9043C14.6759 4.9043 15.8066 5.67624 16.3183 6.78842C15.799 5.68376 14.6727 4.91934 13.3661 4.91934H4.39147C3.83431 4.91934 3.30687 5.05969 2.84458 5.30969C2.22607 5.64241 1.72962 6.16498 1.43555 6.80033C1.93958 5.68 3.07414 4.90492 4.39147 4.90492H13.3661V4.9043Z"
+                    fill="#fff"></path>
+                <path
+                    d="M1.36682 6.95874C1.35165 7.00448 1.33267 7.04959 1.32129 7.09847C1.33267 7.04897 1.34785 7.00385 1.36682 6.95874Z"
+                    fill="#fff"></path>
+                <path
+                    d="M1.26748 7.25757C1.2289 7.3973 1.19855 7.54141 1.17578 7.68866C1.19475 7.54141 1.22574 7.3973 1.26748 7.25757Z"
+                    fill="#fff"></path>
+                <path
+                    d="M9.10019 11.9001C4.2002 9.10006 0.700195 11.2001 0.700195 11.2001V15.4001V23.1001L1.4002 25.9001L4.9002 27.3001H7.7002H11.9002H14.0002L16.8002 25.9001V11.2001C15.2349 11.2001 12.9441 14.0966 9.10019 11.9001Z"
+                    fill="#fff"></path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <div class="video-view">
+            <video autoplay muted loop class="video" id="video">
+                <source src="https://cdn.shopify.com/videos/c/o/v/81c1272b17ee46c49899e823d58e1385.mp4"
+                    type="video/mp4">
+            </video>
+            <button class="video-content">shop now</button>
+        </div>
+        <section class="under-video-highlights">
+            <ul class="lists under-video-list">
+                <li>
+                    <p class="bold">4.8</p>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                    </div>
+                    <p class="bold">18,200 reviews</p>
+                </li>
+                <li>
+                    <img src="https://cdn.sanity.io/images/otip2849/production/51a96486403b95a02c564278391df8c904f0a4b7-18x21.svg"
+                        width="18" height="21" alt="Usp Image">
+                    <p class="bold">USDA organic options</p>
+                </li>
+                <li>
+                    <img src="https://cdn.sanity.io/images/otip2849/production/df932cd7238eef818a35f6282653dacedf24346c-16x19.svg"
+                        width="16" height="19" alt="Usp Image">
+                    <p class="bold">freshly roasted</p>
+                </li>
+                <li>
+                    <img src="https://cdn.sanity.io/images/otip2849/production/369a0e9dc49292f2725ba5e901b2c031f7b6e538-17x26.svg"
+                        width="17" height="26" alt="Usp Image">
+                    <p class="bold">created with love</p>
+                </li>
+            </ul>
+        </section>
+        <section class="shop-best-sellers">
+            <h1 class="centered">shop best-sellers</h1>
+            <div class="product-list">
+                <div class="product-box">
+                    <div class="product-white-box">
+                        <div class="product-best-seller">
+                            <p class="bold small">best seller</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0424/8862/7355/files/SweetOtterRoastar2023Designs_PDP_2048px_01.png"
+                                alt="cake batter blend image">
+                        </div>
+                        <div class="product-name">
+                            <p class="bold">cake batter blend</p>
+                        </div>
+                        <div class="product-buy-button">
+                            <button>add - $16</button>
+                        </div>
+                        <div class="product-stars-and-reviews">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                            <p>205 reviews</p>
+                        </div>
+                    </div>
+                    <div class="product-view-details">view details</div>
+                </div>
+                <div class="product-box">
+                    <div class="product-white-box">
+                        <div class="product-best-seller">
+                            <p class="bold small">best seller</p>
+                        </div>
+                        <div class="product-other-label">
+                            <p class="bold small">5x sold out</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0424/8862/7355/files/OriginalMatcha_PDP_2048px_01.png"
+                                alt="cake batter blend image">
+                        </div>
+                        <div class="product-name">
+                            <p class="bold">matcha green tea</p>
+                        </div>
+                        <div class="product-buy-button">
+                            <button>add - $24</button>
+                        </div>
+                        <div class="product-stars-and-reviews">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                            <p>1,198 reviews</p>
+                        </div>
+                    </div>
+                    <div class="product-view-details">view details</div>
+                </div>
+                <div class="product-box">
+                    <div class="product-white-box">
+                        <div class="product-best-seller">
+                            <p class="bold small">best seller</p>
+                        </div>
+                        <div class="product-other-label">
+                            <p class="bold small">hot or cold</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0424/8862/7355/files/VarietyColdBrewSingles_PDP_2048px_01.png"
+                                alt="cake batter blend image">
+                        </div>
+                        <div class="product-name">
+                            <p class="bold">variety cold brew singles</p>
+                        </div>
+                        <div class="product-buy-button">
+                            <button>add - $16</button>
+                        </div>
+                        <div class="product-stars-and-reviews">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                            <p>890 reviews</p>
+                        </div>
+                    </div>
+                    <div class="product-view-details">view details</div>
+                </div>
+                <div class="product-box">
+                    <div class="product-white-box">
+                        <div class="product-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0424/8862/7355/files/VanillaMatcha_PDP_2048px_01.png"
+                                alt="cake batter blend image">
+                        </div>
+                        <div class="product-name">
+                            <p class="bold">vanilla matcha green tea</p>
+                        </div>
+                        <div class="product-buy-button">
+                            <button>add - $25</button>
+                        </div>
+                        <div class="product-stars-and-reviews">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#DDD"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                            <p>460 reviews</p>
+                        </div>
+                    </div>
+                    <div class="product-view-details">view details</div>
+                </div>
+            </div>
+        </section>
+        <section class="something-for-everyone">
+            <div class="container bg-white smooth-corners">
+                <h1 class="container-title centered">something for everyone</h1>
+                <div class="container-list">
+                    <div class="container-item">
+                        <img class="container-item-image shake-image"
+                            src="https://cdn.sanity.io/images/otip2849/production/5ecc8a19f74c3899d984360b694ac0c2d54647b3-576x575.png">
+                        <p class="container-item-name">shop all</p>
+                    </div>
+                    <div class="container-item">
+                        <img class="container-item-image shake-image"
+                            src="https://cdn.sanity.io/images/otip2849/production/f946bfc7f49f783237107ac6472c25e553a25353-606x609.png">
+                        <p class="container-item-name">coffee beans</p>
+                    </div>
+                    <div class="container-item">
+                        <img class="container-item-image shake-image"
+                            src="https://cdn.sanity.io/images/otip2849/production/2ad7af6e35d9fea86f87d5db528744405745cd6d-623x623.png">
+                        <p class="container-item-name">cold brew</p>
+                    </div>
+                    <div class="container-item">
+                        <img class="container-item-image shake-image"
+                            src="https://cdn.sanity.io/images/otip2849/production/445a8674ef9cfd72142c5b71aba05141cae2662a-535x543.png">
+                        <p class="container-item-name">matcha & tea</p>
+                    </div>
+                    <div class="container-item">
+                        <img class="container-item-image shake-image"
+                            src="https://cdn.sanity.io/images/otip2849/production/eb69310cf16e2afa267e7f994b4eb5ae21d42ce0-656x640.png">
+                        <p class="container-item-name">instant</p>
+                    </div>
+                    <div class="container-item">
+                        <img class="container-item-image shake-image"
+                            src="https://cdn.sanity.io/images/otip2849/production/118ae5a7c2cfce35a4ed29208f6b11b649af2e5d-585x490.png">
+                        <p class="container-item-name">accessories</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="shop-best-sellers">
+            <h1 class="centered">get started with our favorite bundles</h1>
+            <div class="product-list">
+                <div class="product-box">
+                    <div class="product-white-box">
+                        <div class="product-best-seller">
+                            <p class="bold small">bundle & save 10%</p>
+                        </div>
+                        <div class="product-image">
+                            <img
+                                src="https://cdn.shopify.com/s/files/1/0424/8862/7355/files/MatchaStarterPack_PDP_2048px_04.png">
+                        </div>
+                        <div class="product-name">
+                            <p class="bold">matcha starter pack</p>
+                        </div>
+                        <div class="product-buy-button">
+                            <button>add - $65 <span class="red crossed">$72</span></button>
+                        </div>
+                        <div class="product-stars-and-reviews">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                            <p>203 reviews</p>
+                        </div>
+                    </div>
+                    <div class="product-view-details">view details</div>
+                </div>
+                <div class="product-box">
+                    <div class="product-white-box">
+                        <div class="product-best-seller">
+                            <p class="bold small">bundle & save 10%</p>
+                        </div>
+                        <div class="product-image">
+                            <img
+                                src="https://cdn.shopify.com/s/files/1/0424/8862/7355/files/ColdBrewStarterPack_PDP_2048px_07_c858de93-70bd-40ec-a75b-a1a7b7ef4a95.png">
+                        </div>
+                        <div class="product-name">
+                            <p class="bold">cold brew starter pack</p>
+                        </div>
+                        <div class="product-buy-button">
+                            <button>add - $44 <span class="red crossed">$49</span></button>
+                        </div>
+                        <div class="product-stars-and-reviews">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                            <p>208 reviews</p>
+                        </div>
+                    </div>
+                    <div class="product-view-details">view details</div>
+                </div>
+                <div class="product-box">
+                    <div class="product-white-box">
+                        <div class="product-best-seller">
+                            <p class="bold small">bundle & save 10%</p>
+                        </div>
+                        <div class="product-image">
+                            <img
+                                src="https://cdn.shopify.com/s/files/1/0424/8862/7355/files/LargeColdBrewStarterPack_PDP_2048px_01.png">
+                        </div>
+                        <div class="product-name">
+                            <p class="bold">xl cold brew starter pack</p>
+                        </div>
+                        <div class="product-buy-button">
+                            <button>add - $44 <span class="red crossed">$49</span></button>
+                        </div>
+                        <div class="product-stars-and-reviews">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                            <p>77 reviews</p>
+                        </div>
+                    </div>
+                    <div class="product-view-details">view details</div>
+                </div>
+                <div class="product-box">
+                    <div class="product-white-box">
+                        <div class="product-image">
+                            <img
+                                src="https://cdn.shopify.com/s/files/1/0424/8862/7355/files/ChaiColdBrewStarterPack_PDP_2048px_01.png">
+                        </div>
+                        <div class="product-name">
+                            <p class="bold">chai cold brew starter pack</p>
+                        </div>
+                        <div class="product-buy-button">
+                            <button>add - $46 <span class="red crossed">$51</span></button>
+                        </div>
+                        <div class="product-stars-and-reviews">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFBF00"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#DDD"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </div>
+                            <p>12 reviews</p>
+                        </div>
+                    </div>
+                    <div class="product-view-details">view details</div>
+                </div>
+            </div>
+        </section>
+        <section class="explore-the-archive">
+            <div class="container bg-blue smooth-corners">
+                <div class="container-item explore-text">
+                    <h2 class="white">explore the archive</h2>
+                    <h1 class="white">emma's spilling her secret recipes</h1>
+                    <p class="white">Cafe stops are no longer required. Browse everything from simple morning coffee, to
+                        indulgent barista-worthy recipes.</p>
+                    <button>view more recipes</button>
+                    <img
+                        src="https://cdn.sanity.io/images/otip2849/production/2718ea30535e879c6ca25870fd47642594b256ff-1063x1000.webp">
+                </div>
+                <div class="container-item explore-video">
+                    <video controls autoplay muted loop class="video">
+                        <source src="https://cdn.shopify.com/videos/c/o/v/feeaaea858354c72a686b1ec0f1eea52.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 id="shop-all"></h1>
+            <h1 id="coffee-beans"></h1>
+            <h1 id="cold-brew-and-instant"></h1>
+            <h1 id="matcha-and-tea"></h1>
+            <h1 id="accessories-and-more"></h1>
+            <h1 id="learn"></h1>
+        </section>
+        <section>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <p>Subscribe and save</p>
+                <input name="email" id="email" type="email" placeholder="enter your email">
+                <input id="submit" type="submit">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
