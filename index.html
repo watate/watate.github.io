@@ -6,34 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/normalize.css">
     <link rel="stylesheet" href="https://unpkg.com/magick.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>waltertay.com</title>
 </head>
 
 <body>
     <main>
-        <img src="profilePhoto.jpg">
-        <section>
+        <section id="photo">
+            <img src="profilePhoto.jpg">
+        </section>
+        <section id="about">
             <p>Hi, I'm Walter!</p>
             <p>Right now, I'm on sabbatical working on personal projects. My current focus is on creating tools to help
                 people get good sleep.</p>
-            <p>In 2024, I launched and built <a href="https://visa-checker-app.vercel.app/">VisaHacks</a>, a tool that
+            <p>In 2024, I launched and built <a href="https://visa-checker-app.vercel.app/" target="_blank">VisaHacks</a>, a tool that
                 simplifies checking visa requirements for Indian passport holders.</p>
-            <p>From 2020 to 2023, I worked as a Product Manager at <a href="https://www.igloohome.co/">igloohome</a>,
-                where I led the launch of software for the <a href="https://www.igloohome.co/products/bridge">Bridge</a>
-                (Bluetooth/WiFi gateway), the <a href="https://www.igloohome.co/products/padlock-2">Padlock 2</a>
+            <p>From 2020 to 2023, I worked as a Product Manager at <a href="https://www.igloohome.co/" target="_blank">igloohome</a>,
+                where I led the launch of software for the <a href="https://www.igloohome.co/products/bridge" target="_blank">Bridge</a>
+                (Bluetooth/WiFi gateway), the <a href="https://www.igloohome.co/products/padlock-2" target="_blank">Padlock 2</a>
                 (world's toughest smart padlock), the <a
-                    href="https://igloocompany.stoplight.io/docs/igloohome-api">igloohome API</a> (enterprise API
+                    href="https://igloocompany.stoplight.io/docs/igloohome-api" target="_blank">igloohome API</a> (enterprise API
                 product), and various other smart devices.</p>
             <p>My formal educational background is in mechanical engineering at <a
-                    href="https://www.nus.edu.sg/">NUS</a> and liberal arts at <a
-                    href="https://www.usp.nus.edu.sg/">USP</a>.</p>
+                    href="https://www.nus.edu.sg/" target="_blank">NUS</a> and liberal arts at <a
+                    href="https://www.usp.nus.edu.sg/" target="_blank">USP</a>.</p>
+        </section>
+        <section class="hide" id="readings">
+            <h3>selected readings</h3>
+            <p>The following are either:</p>
+            <ol>
+                <li>Ideas I regularly reflect on, or </li>
+                <li>Recommendations I have for specific questions related to productivity or my interests</li>
+            </ol>
+            <p>Sometimes it's both.</p>
+            <h3>productivity</h3>
+            <ul>
+                <li><a href="http://augmentingcognition.com/ltm.html" target="_blank">Augmenting Long-term Memory</a>
+                    (by Michael Nielsen)</li>
+                <li><a href="https://web.archive.org/web/20210918232402/https://a16z.com/2020/09/07/on-productivity-scheduling-reading-habits-marc-andreessen/"
+                        target="_blank">Productivity, Scheduling, Reading Habits, Work, and More</a> (by Marc
+                    Andreessen)</li>
+                <li><a href="https://lynettebye.com/blog/2020/6/26/five-ways-to-prioritize-better"
+                        target="_blank">Prioritizing Better</a> (by Lynette Bye)</li>
+                <li><a href="https://web.archive.org/web/20211010181733/https://cs.stanford.edu/~jsteinhardt/ResearchasaStochasticDecisionProcess.html"
+                        target="_blank">Research as a Stochastic Design Process</a> (by Jacob Steinhardt)</li>
+                <li><a href="https://www.lesswrong.com/posts/PsEppdvgRisz5xAHG/fermi-estimates" target="_blank">Fermi
+                        Estimates</a> (by Luke Muehlhauser)</li>
+            </ul>
+            <h3>interests</h3>
+            <ul>
+                <li><a href="http://www.paulgraham.com/essay.html" target="_blank">Age of the Essay</a> (by Paul Graham)
+                </li>
+                <li><a href="https://vita.had.co.nz/papers/tidy-data.pdf" target="_blank">Tidy Data</a> (by Hadley
+                    Wickham)</li>
+                <li><a href="https://philosophy.fas.harvard.edu/files/phildept/files/brief_guide_to_writing_philosophy_paper.pdf"
+                        target="_blank">Brief Guide to Writing the Philosophy Paper</a> (by Simon Rippon)</li>
+                <li><a href="https://www.usenix.org/system/files/1401_08-12_mickens.pdf" target="_blank">This World of
+                        Ours</a> (by James Mickens)</li>
+                <li><a href="https://www.whydomath.org/Reading_Room_Material/ian_stewart/yourhalf.html"
+                        target="_blank">Your Half’s Bigger Than My Half!</a> (by Ian Stewart)</li>
+                <li><a href="https://www.newyorker.com/magazine/2020/12/21/what-if-you-could-do-it-all-over"
+                        target="_blank">What if you could do it all over?</a> (by Joshua Rothman)</li>
+            </ul>
+            <h3>videos</h3>
+            <ul>
+                <li><a href="https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/"
+                        target="_blank">How to Write a Great Research Paper</a> (by Simon Peyton Jones)</li>
+                <li><a href="https://youtu.be/4cw9K9yuIyU" target="_blank">How To Build a Thrust Vectored Model
+                        Rocket</a> (by Joe Barnard)</li>
+                <li><a href="https://youtu.be/_3loq22TxSc" target="_blank">Powerpoint Programming</a> (by Tom
+                    Wildenhain)</li>
+                <li><a href="https://youtu.be/fdY7dt3ijgY" target="_blank">Spinning Up in Deep RL</a> (by OpenAI)</li>
+                <li><a href="https://youtu.be/Lk_IKBPkGSg" target="_blank">The Food Lab: Better Home Cooking Through
+                        Science</a> (by J. Kenji López-Alt)</li>
+            </ul>
+            <h3>websites</h3>
+            <ul>
+                <li><a href="https://80000hours.org/" target="_blank">80,000 Hours</a> (Nonprofit researching and
+                    promoting effective altruism)</li>
+                <li><a href="https://www.givewell.org/" target="_blank">GiveWell</a> (Research helps direct donations to
+                    the most impactful charities)</li>
+                <li><a href="https://cryptopals.com/" target="_blank">Cryptopals Crypto Challenges</a> (48 exercises that demonstrate attacks on real-world crypto)</li>
+                <li><a href="https://builtformars.co.uk/" target="_blank">builtformars</a> (Insightful case studies from a UX consultancy)</li>
+                <li><a href="http://furius.ca/beancount/" target="_blank">beancount</a> (Double-entry
+                    accounting from text files)</li>
+            </ul>
         </section>
         <section>
-            <h2>Contact</h2>
+            <h3>contact</h3>
             <p>Email: walter.spades[at]gmail.com</p>
+            <button id="about-button">about</button>
+            <button id="readings-button">selected readings</button>
         </section>
     </main>
-
+    <script src="./script.js"/>
 </body>
 
 </html>
