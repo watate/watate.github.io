@@ -16,12 +16,14 @@ function onAboutButtonClick() {
     showContent(aboutSection);
     showContent(photoSection);
     hideContent(readingsSection);
+    window.location.hash = 'photo';
 }
 
 function onReadingsButtonClick() {
     showContent(readingsSection);
     hideContent(aboutSection);
     hideContent(photoSection);
+    window.location.hash = 'readings';
 }
 
 aboutButton.addEventListener("click", onAboutButtonClick);
