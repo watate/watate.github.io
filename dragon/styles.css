@@ -1,5 +1,14 @@
+* {
+  font-size: 2.5vw;
+}
+
 body {
   background-color: #0a0a23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0px;
 }
 
 #text {
@@ -9,11 +18,10 @@ body {
 }
 
 #game {
-  max-width: 500px;
-  max-height: 400px;
+  max-width: 50vw;
+  max-height: 70vh;
   background-color: #ffffff;
   color: #ffffff;
-  margin: 30px auto 0px;
   padding: 10px;
 }
 
@@ -42,4 +50,24 @@ button {
   background-color: #feac32;
   background-image: linear-gradient(#fecc4c, #ffac33);
   border: 3px solid #feac32;
+}
+
+@media (max-width: 1000px) {
+  * {
+    font-size: 4vw; /* Increase base font size for smaller screens */
+  }
+
+  #game {
+    max-width: 90vw;
+  }
+
+  button {
+    padding: 2vw 4vw;
+  }
+
+  /* Stack stats, controls, and monster stats vertically for smaller screens */
+  #controls {
+    display: flex;
+    flex-direction: column;
+  }
 }
