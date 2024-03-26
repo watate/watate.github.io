@@ -38,6 +38,8 @@ function onProjectsButtonClick() {
     window.location.hash = 'projects';
 }
 
-aboutButton.addEventListener("click", onAboutButtonClick);
-readingsButton.addEventListener("click", onReadingsButtonClick);
-projectsButton.addEventListener("click", onProjectsButtonClick);
+document.addEventListener('DOMContentLoaded', (event) => {
+    aboutButton.addEventListener("click", onAboutButtonClick);
+    readingsButton.addEventListener("click", onReadingsButtonClick);
+    projectsButton.addEventListener("click", onProjectsButtonClick);
+});
