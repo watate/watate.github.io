@@ -6,31 +6,33 @@ body {
     background-color: rgb(12, 6, 41);
     margin: auto auto;
     height: 100vh;
-    width: min(50%, 500px);
+    width: min(50%, 380px);
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
 header {
     color: white;
+    /* border: 1px solid red; */
+    width: 100%;
 }
 
 form {
     background-color: white;
     width: 100%;
     border-radius: 10px;
-    padding: 20px 20px;
-    margin: 10px 20%;
+    padding: 20px 0px;
+    margin: 20px 0px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 form > * {
-    margin: 5px auto;
+    margin: 5px 20px;
 }
 
 form > div > input {
@@ -38,6 +40,7 @@ form > div > input {
     border-left: none;
     border-right: none;
     border-bottom: 3px solid purple;
+    width: 60%;
 }
 
 form > div > button {
@@ -51,14 +54,24 @@ form > div > button {
     background-color: rgb(7, 92, 7);
     width: 100%;
     border-radius: 10px;
-    padding: 20px 20px;
+    padding: 20px 0px;
     color: white;
     display: flex;
     margin: 10px 20%;
 }
 
-#info-bubble > * {
-    margin: 5px;
+#info-bubble-bulb {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+#info-bubble-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 600px) {
