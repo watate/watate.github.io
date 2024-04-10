@@ -60,4 +60,10 @@ footer {
         width: 100%;
         flex-direction: column;
     }
+    .landing-page-title {
+        width: 90%;
+    }
+    .landing-page-desc {
+        width: 90%;
+    }
 }
