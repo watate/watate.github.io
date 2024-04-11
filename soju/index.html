@@ -13,9 +13,10 @@
 <body>
     <div class="landing-page">
         <h1 class="landing-page-title">Read Korean legal documents</h1>
-        <p class="landing-page-desc">SojuHWPX is a free application for opening .hwpx files.</p>
+        <p class="landing-page-desc">SojuHWPX is a free, open-source application for opening .hwpx files.</p>
         <img class="app-image" src="./icon.png">
-        <a href="./SojuHWPX-1.0.dmg" download="" target="_blank" class="btn btn-primary download-btn">Download SojuHWPX for Mac</a>
+        <a href="./SojuHWPX-1.0.dmg" download="" target="_blank" class="btn btn-primary download-btn">Download SojuHWPX
+            for Mac</a>
     </div>
     <div class="faq">
         <h1>Frequently asked questions</h1>
@@ -29,10 +30,12 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        .hwpx files are files of "Hangul", a proprietary word processing application published by the
-                        South Korean company Hancom Inc. Use of Hangul is the standard when it comes to Korean legal
-                        documents, for example see documents from the <a href="https://www.fsc.go.kr/no010101"
-                            target="_blank">Financial Services Commission</a>.
+                        <p>.hwpx files are files of "Hangul", a proprietary word processing application published by the
+                            South Korean company Hancom Inc. Use of Hangul is the standard when it comes to Korean legal
+                            documents, for example see documents from the <a href="https://www.fsc.go.kr/no010101"
+                                target="_blank">Financial Services Commission</a>.</p>
+                        <p>SojuHWPX allows you to open .hwpx files
+                            without downloading/paying for proprietary software.</p>
                     </div>
                 </div>
             </div>
@@ -45,15 +48,45 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        There is currently no free / easily available software that can deal with .hwpx or .hwp files.
-                        For example, see this issue from <a
-                            href="https://ask.libreoffice.org/t/opening-hangul-hanword-files-hwp/36168"
-                            target="_blank">LibreOffice</a>. I learnt about this when my friend (who translates and
-                        summarizes Korean legal
-                        documents as well as documents in other languages) told me about the issue. I also wanted an
-                        excuse to try and build a desktop application. In the future I might contribute to the
-                        LibreOffice project directly to fix this issue but for now I just wanted to build a 
-                        simple app that solves this problem.
+                        <p>There is currently no free / easily available software that can deal with .hwpx or .hwp
+                            files.
+                            For example, see this issue from <a
+                                href="https://ask.libreoffice.org/t/opening-hangul-hanword-files-hwp/36168"
+                                target="_blank">LibreOffice</a>.</p>
+                        <p>I learnt about this when my friend (who translates and
+                            summarizes Korean legal
+                            documents as well as documents in other languages) told me about the issue. I also wanted an
+                            excuse to try building a desktop application. In the future I might contribute to the
+                            LibreOffice project directly to fix this issue but for now I just wanted to build a
+                            simple app that solves this problem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwoB" aria-expanded="false" aria-controls="collapseTwoB">
+                        I can't install SojuHWPX
+                    </button>
+                </h2>
+                <div id="collapseTwoB" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>You might see an error saying: ["SojuHWPX" can't be opened because Apple cannot check it for
+                            malicious software]. This is because the application is not signed.</p>
+                        <p>Signing desktop applications for Mac is not free 😞. Code signing certificates for macOS apps
+                            can only be obtained through Apple by purchasing a membership to the Apple Developer
+                            Program. As
+                            of writing (11th April, 2024), this costs S$148 annually. I am unfortunately not able to
+                            afford this.</p>
+                        <p><strong>If you ignore the warning and proceed with the installation, the application will
+                                work just
+                                fine.</strong> If you're concerned about malware, you are free to inspect all aspects of
+                            it here: <a href="https://github.com/watate/hwpx-reader"
+                                target="_blank">https://github.com/watate/hwpx-reader</a> (it's open source).</p>
+                        <p>Here's a short video showing how I installed it:</p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/Z_o28_NHCIU?si=-GeawUr4uVYInv8a" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,7 +94,7 @@
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        I have some questions, how do I contact you?
+                        How do I contact you?
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -79,7 +112,8 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>You can buy me a coffee here: <a href="buymeacoffee.com/watate" target="_blank">buymeacoffee.com/watate</a> 😊</p>
+                        <p>If this application helped you, you can buy me a coffee here: <a href="buymeacoffee.com/watate"
+                                target="_blank">buymeacoffee.com/watate</a> 😊</p>
                         <p>Or here if you are based in Singapore:</p>
                         <image class="paylah" src="paylah.jpg"></image>
                     </div>
@@ -87,11 +121,13 @@
             </div>
         </div>
     </div>
-    <hr></hr>
+    <hr>
+    </hr>
     <footer>
         <div class="footer-col">
             <p>SojuHWPX</p>
             <p>Copyright © 2024 - All rights reserved</p>
+            <p><a href="https://github.com/watate/hwpx-reader" target="_blank">Source</a></p>
         </div>
         <div class="footer-col">
             <p class="text-decoration-underline">Legal</p>
