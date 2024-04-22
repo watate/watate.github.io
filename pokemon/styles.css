@@ -1,0 +1,66 @@
+body {
+    background: rgb(6, 6, 37);
+}
+
+main h1 {
+    color: white;
+    text-align: center;
+}
+
+#card {
+    background: rgb(232, 231, 231);
+    width: 400px;
+    height: 600px;
+    margin: 0px auto;
+}
+
+#search-area {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+#pokemon-basic-info {
+    height: 250px;
+    background: rgb(218, 218, 218);
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#pokemon-basic-info > div {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5px;
+}
+
+#pokemon-id, #height {
+    margin: 0px 5px;
+}
+
+#pokemon-img {
+    height: 100%;
+}
+
+#type {
+    border: 1px solid black;
+    width: fit-content;
+    padding: 3px 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+table {
+    width: 250px;
+}
+
+table tr {
+    background: purple;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #card {
+        width: 80%;
+    }
+}
