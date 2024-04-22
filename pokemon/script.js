@@ -57,6 +57,8 @@ const getPokemon = async (event) => {
         specialAttack.textContent = pdata.stats.find(stat => stat.stat.name === "special-attack")["base_stat"];
         specialDefense.textContent = pdata.stats.find(stat => stat.stat.name === "special-defense")["base_stat"];
         speed.textContent = pdata.stats.find(stat => stat.stat.name === "speed")["base_stat"];
+        
+        searchInput.value = "";
 
     } catch (err) {
         alert("Pokémon not found");
