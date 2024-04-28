@@ -1,0 +1,72 @@
+.landing-page {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 100px;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.app-image {
+    width: 300px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.download-btn {
+    width: 300px;
+    margin-top: 40px;
+}
+
+body {
+    background: linear-gradient(0.25turn, #95ffeca9, #95ffec1e, #95ffeca9);
+    height: 100vh;
+}
+
+.faq {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.faq h1 {
+    text-align: center;
+}
+
+.accordion {
+    padding: 30px 0px;
+}
+
+footer {
+    display: flex;
+    width: 40%;
+    margin: 0px auto;
+}
+
+.footer-col {
+    padding: 20px;
+}
+
+.footer-col * {
+    margin: 0px;
+}
+
+.paylah {
+    width: 250px;
+}
+
+@media screen and (max-width: 1200px) {
+    .faq {
+        width: 90%;
+    }
+    footer {
+        width: 100%;
+        flex-direction: column;
+    }
+    .landing-page-title {
+        width: 90%;
+    }
+    .landing-page-desc {
+        width: 90%;
+    }
+}
