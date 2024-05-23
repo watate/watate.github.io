@@ -16,6 +16,10 @@
     width: 300px;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
+
 body {
     background: linear-gradient(0.25turn, #c5ffcc, #ebf8e1, #c5ffcc);
     height: 100vh;
