@@ -138,30 +138,38 @@ footer {
 }
 
 /* How It Works section styles */
-.how-it-works {
-    background-color: #f4f4f4;
-    padding: 80px 0;
+.how-it-works-title {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.how-it-works h2 {
-    text-align: center;
-    margin-bottom: 40px;
+.how-it-works-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items to the top */
+    gap: 0px; /* Reduce gap between text and image */
+    max-width: 700px; /* Limit maximum width for better readability */
+    margin: 0 auto; /* Center the content */
+}
+
+.how-it-works-text {
+    flex: 1;
+    padding-right: 20px; /* Add some padding to the right of the text */
 }
 
 .how-it-works ol {
-    max-width: 600px;
-    margin: 0 auto;
     padding-left: 20px;
+    margin: 0; /* Remove default margin */
 }
 
 .how-it-works li {
-    margin-bottom: 20px;
-    font-size: 1.1em;
+    margin-bottom: 10px; /* Reduce space between list items */
+    font-size: 1em; /* Slightly reduce font size */
 }
 
 .image-showcase {
+    flex: 0 0 300px; /* Keep fixed width of 300px */
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .image-showcase img {
@@ -170,9 +178,15 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.image-showcase .demo-image {
+    width: 100%;
+    height: auto;
+}
+
 .image-showcase p {
     margin-top: 10px;
     font-style: italic;
+    font-size: 0.9em; /* Slightly reduce caption font size */
 }
 
 /* Testimonials section styles */
@@ -191,12 +205,19 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .feature-grid {
-        grid-template-columns: 1fr;
+    .how-it-works-content {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .how-it-works ol {
-        padding-left: 0;
+
+    .how-it-works-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-showcase {
+        width: 100%;
+        max-width: 300px;
     }
 }
 
