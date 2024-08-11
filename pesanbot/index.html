@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="#home">PesanBot</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="https://t.me/PesanWalterBot" class="cta-button">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h1>Simplify Your Telegram Group Orders with PesanBot</h1>
+                <h1>Simplify Group Orders with PesanBot</h1>
                 <p>Effortlessly manage and track group orders in your Telegram chats.</p>
                 <a href="https://t.me/PesanWalterBot" class="cta-button">Start Using PesanBot</a>
             </div>
@@ -40,6 +52,37 @@
             </div>
         </section>
 
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="image-showcase">
+                    <img src="pesanbot-demo.jpg" alt="PesanBot Demo" class="demo-image">
+                    <p>PesanBot in action: Taking orders and processing receipts</p>
+                </div>
+                <ol>
+                    <li>Add @PesanWalterBot to your Telegram group</li>
+                    <li>Members place orders by mentioning the bot</li>
+                    <li>Upload a photo of your receipt when ready</li>
+                    <li>PesanBot scans the receipt and matches items to orders</li>
+                    <li>Get an instant breakdown of who owes what</li>
+                </ol>
+                <div class="image-showcase">
+                    <img src="receipt-matching.jpg" alt="Receipt Matching" class="receipt-image">
+                    <p>PesanBot accurately matches receipt items to orders</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>What Users Are Saying</h2>
+                <blockquote>
+                    "PesanBot saved us from missing orders in our large group. It's a game-changer for group dining!"
+                </blockquote>
+                <p>- Satisfied User</p>
+            </div>
+        </section>
+
         <section id="faq" class="faq">
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
@@ -53,11 +96,11 @@
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">How does the bill splitting feature work?</div>
-                    <div class="faq-answer">After compiling orders, upload a photo of the receipt. PesanBot will process the image and suggest a fair split based on individual orders.</div>
+                    <div class="faq-answer">After compiling orders, upload a photo of the receipt. PesanBot will process the image, match items to orders, and suggest a fair split based on individual orders. It can even handle additional taxes and discounts!</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can I use PesanBot in multiple groups?</div>
-                    <div class="faq-answer">Absolutely! You can add PesanBot to as many Telegram groups as you like.</div>
+                    <div class="faq-question">Can I use PesanBot for friends who don't have Telegram?</div>
+                    <div class="faq-answer">Yes! You can manually add names to split bills for friends without Telegram. Just upload your receipt to start the process.</div>
                 </div>
             </div>
         </section>
@@ -66,6 +109,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 PesanBot. All rights reserved.</p>
+            <p>Created by <a href="https://twitter.com/waltertayannlee">@waltertayannlee</a></p>
         </div>
     </footer>
 
