@@ -157,9 +157,12 @@ footer {
     padding-right: 20px; /* Add some padding to the right of the text */
 }
 
+.how-it-works-text * {
+    margin-top: 10px;
+}
+
 .how-it-works ol {
     padding-left: 20px;
-    margin: 0; /* Remove default margin */
 }
 
 .how-it-works li {

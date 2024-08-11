@@ -7,18 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <ul>
-                <li><a href="#home">PesanBot</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="https://t.me/PesanWalterBot" class="cta-button">Get Started</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
         <section id="home" class="hero">
             <div class="container">
@@ -33,33 +21,52 @@
                 <h2>Features</h2>
                 <div class="feature-grid">
                     <div class="feature-item">
-                        <h3>Easy Order Tracking</h3>
-                        <p>Keep track of all orders in your Telegram group with simple commands.</p>
+                        <h3>No more missing orders</h3>
+                        <p>Keep track of all orders in your Telegram group by literally sending text messages.</p>
                     </div>
                     <div class="feature-item">
-                        <h3>Automatic Order Compilation</h3>
-                        <p>PesanBot compiles all orders automatically, saving you time and effort.</p>
+                        <h3>Know who ordered what</h3>
+                        <p>PesanBot compiles all orders and names automatically, saving you time and effort.</p>
                     </div>
                     <div class="feature-item">
-                        <h3>Receipt Processing</h3>
+                        <h3>Instantly know how much to pay</h3>
                         <p>Upload a receipt image, and PesanBot will help split the bill among group members.</p>
                     </div>
                     <div class="feature-item">
-                        <h3>User-Friendly Interface</h3>
-                        <p>Intuitive commands make it easy for anyone in your group to use PesanBot.</p>
+                        <h3>Supports 1000s of receipts and languages</h3>
+                        <p>日本語, English, Español, Français, Deutsch, 中文, 한국어, Português, Русский, Italiano, العربية, हिन्दी, Ελληνικά, Türkçe, עברית.</p>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="how-it-works" class="how-it-works">
             <div class="container">
-                <h2 class="how-it-works-title">How It Works</h2>
+                <h2 class="how-it-works-title">How It Usually Works (The Bad Way)</h2>
+                <div class="how-it-works-content">
+                    <div class="how-it-works-text">
+                        <ol>
+                            <li>Everybody copy pastes orders nonstop</li>
+                            <li>Someone's order is missing because you copy pasted slower than the previous guy</li>
+                            <li>Someone goes hungry and has to re-order</li>
+                            <li>Don't know who ordered what</li>
+                            <li>Pull out a calculator to figure out discounts and taxes</li>
+                        </ol>
+                    </div>
+                    <div class="image-showcase">
+                        <img src="./images/orders.jpg" alt="PesanBot Demo" class="demo-image">
+                        <p>What a normal supper looks like in Southeast Asia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2 class="how-it-works-title">How It Works with PesanBot</h2>
                 <div class="how-it-works-content">
                     <div class="how-it-works-text">
                         <ol>
                             <li>Add @PesanWalterBot to your Telegram group</li>
-                            <li>Members place orders by mentioning the bot</li>
+                            <li>Place an order by mentioning the bot</li>
                             <li>Upload a photo of your receipt when ready</li>
                             <li>PesanBot scans the receipt and matches items to orders</li>
                             <li>Get an instant breakdown of who owes what</li>
@@ -74,14 +81,14 @@
         </section>
         <section id="receipt-matching" class="how-it-works">
             <div class="container">
-                <h2 class="how-it-works-title">If your friends don't have telegram</h2>
+                <h2 class="how-it-works-title">If your friends don't have Telegram...</h2>
                 <div class="how-it-works-content">
                     <div class="how-it-works-text">
-                        <p>You can also manually add names to split bills.</p>
+                        <b>Manually add names:</b>
                         <ol>
                             <li>Upload any receipt image</li>
-                            <li>Smart matching with group orders (or manually add names)</li>
-                            <li>Handles additional taxes and discounts</li>
+                            <li>Add names</li>
+                            <li>Boom, done (tax and discounts included).</li>
                         </ol>
                     </div>
                     <div class="image-showcase">
@@ -120,6 +127,10 @@
                 <div class="faq-item">
                     <div class="faq-question">Can I use PesanBot for friends who don't have Telegram?</div>
                     <div class="faq-answer">Yes! You can manually add names to split bills for friends without Telegram. Just upload your receipt to start the process.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How can I support you or PesanBot?</div>
+                    <div class="faq-answer">If this application helped you, you can buy me a coffee here: <a href="https://buymeacoffee.com/watate" target="_blank">buymeacoffee.com/watate</a> 😊.</div>
                 </div>
             </div>
         </section>
