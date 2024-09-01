@@ -59,6 +59,16 @@
     table-layout: fixed;
 }
 
+.project-table td {
+    padding: 14px 10px;
+    vertical-align: top;
+}
+
+.project-table td:first-child,
+.project-table th:first-child {
+    text-align: right;
+}
+
 .spaced-table td {
     padding: 10px 10px;
     border-bottom: 1px solid black;
