@@ -53,3 +53,33 @@
 #links {
     margin-bottom: 20px;
 }
+
+h3 {
+    margin-top: 50px;
+}
+
+.spaced-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.spaced-table td {
+    padding: 10px 10px;
+}
+  
+.spaced-table th:first-child,
+.spaced-table td:first-child {
+    width: 50%; /* First column takes 60% */
+}
+
+.spaced-table th:nth-child(2),
+.spaced-table th:nth-child(3),
+.spaced-table td:nth-child(2),
+.spaced-table td:nth-child(3) {
+    width: 25%; /* Last two columns take 20% each */
+}
+
+th, td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
