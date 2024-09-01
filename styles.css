@@ -61,6 +61,7 @@
 
 .spaced-table td {
     padding: 10px 10px;
+    border-bottom: 1px solid black;
 }
   
 .spaced-table th:first-child,
