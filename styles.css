@@ -16,6 +16,18 @@
     }
 }
 
+@media screen and (min-width: 1440px) {
+    #main {
+        max-width: 40%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #main {
+        max-width: 30%;
+    }
+}
+
 
 .hide {
     display: none;
